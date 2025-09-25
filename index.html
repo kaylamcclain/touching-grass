@@ -1,0 +1,118 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 15px;
+            max-width: 800px;
+            width: 100%;
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+
+        .image-item {
+            aspect-ratio: 1;
+            overflow: hidden;
+            border-radius: 8px;
+            padding: 10%;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .image-item:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="image-item">
+            <img src="images/vine pearl.png">
+        </div>
+        <div class="image-item">
+            <img src="images/red stripe.png">
+        </div>
+        <div class="image-item">
+            <img src="images/lady.png">
+        </div>
+        <div class="image-item">
+            <img src="images/windy.png">
+        </div>
+        <div class="image-item">
+            <img src="images/star pearl.png">
+        </div>
+        <div class="image-item">
+            <img src="images/flower pearl.png">
+        </div>
+        <div class="image-item">
+            <img src="images/moon.png">
+        </div>
+        <div class="image-item">
+            <img src="images/dragonfly.png">
+        </div>
+        <div class="image-item">
+            <img src="images/small pearl.png">
+        </div>
+        <div class="image-item">
+            <img src="images/fractal.png">
+        </div>
+        <div class="image-item">
+            <img src="images/green pink flower.png">
+        </div>
+        <div class="image-item">
+            <img src="images/3 leaf.png">
+        </div>
+        <div class="image-item">
+            <img src="images/square.png">
+        </div>
+        <div class="image-item">
+            <img src="images/pink flower.png">
+        </div>
+        <div class="image-item">
+            <img src="images/blue dot.png">
+        </div>
+        <div class="image-item">
+            <img src="images/small moon.png">
+        </div>
+        <div class="image-item">
+            <img src="images/shell.png">
+        </div>
+        <div class="image-item">
+            <img src="images/teal girl.png">
+        </div>
+        <div class="image-item">
+            <img src="images/blue center.png">
+        </div>
+        <div class="image-item">
+            <img src="images/red swirl.png">
+        </div>
+    </div>
+</body>
+</html>
